@@ -145,7 +145,7 @@ mark {
 	}
 
 	p {
-		margin: 0 0 2rem 0;
+		margin: 0 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -341,7 +341,7 @@ mark {
 
 		.image.main {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 1rem 0;
 			width: 100%;
 		}
 
@@ -486,7 +486,7 @@ mark {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(84, 92, 140, 0.6), rgba(243, 220, 212, 0.6)), url("../../images/overlay.png");
+			background-image: linear-gradient(rgba(84, 92, 140, 0.6), 30%, rgba(243, 220, 212, 0.6), 70%, rgba(84, 92, 140, 0.6)), url("../../images/overlay.png");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -685,11 +685,11 @@ mark {
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(84, 92, 140, 0.3);
+						background-color: rgba(222, 189, 190, 0.3);
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(84, 92, 140, 0.5);
+						background-color: rgba(222, 189, 190, 0.5);
 					}
 
 		#header nav.use-middle:after {
@@ -850,7 +850,7 @@ mark {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 45rem;
 			max-width: 100%;
 			height: 30rem;
 			max-height: 100%;
