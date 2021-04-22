@@ -169,7 +169,7 @@ mark {
 			width: -ms-max-content;
 			width: max-content;
 			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
+			margin: 0 0 1rem 0;
 		}
 
 	h1 {
@@ -647,7 +647,7 @@ mark {
 
 			#header .content p {
 				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				font-size: 1rem;
 				line-height: 2;
 			}
 
@@ -661,11 +661,11 @@ mark {
 			padding-left: 0;
 			border: solid 1px #ffffff;
 			border-radius: 4px;
+			background-color: rgba(243, 220, 212, 0.15);
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
 			}
 
 				#header nav ul li:first-child {
@@ -691,21 +691,6 @@ mark {
 					#header nav ul li a:active {
 						background-color: rgba(222, 189, 190, 0.5);
 					}
-
-		#header nav.use-middle:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: calc(50% - 1px);
-			width: 1px;
-			height: 100%;
-			background: #ffffff;
-		}
-
-		#header nav.use-middle ul li.is-middle {
-			border-left: 0;
-		}
 
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);
@@ -848,7 +833,7 @@ mark {
 			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
+			padding: 2.5rem 2.5rem 1rem 2.5rem ;
 			position: relative;
 			width: 45rem;
 			max-width: 100%;
