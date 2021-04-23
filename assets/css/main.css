@@ -797,6 +797,15 @@ mark {
 
 		}
 
+		@media only screen and (orientation: portrait){
+			#header{
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+		}
+
 /* Main */
 
 	#main {
