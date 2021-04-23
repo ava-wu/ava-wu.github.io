@@ -803,6 +803,8 @@ mark {
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
 				flex-direction: column;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
 			}
 		}
 
