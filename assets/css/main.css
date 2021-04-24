@@ -69,7 +69,7 @@ mark {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #222222;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -133,6 +133,7 @@ mark {
 
 		a:hover {
 			border-bottom-color: transparent;
+			color: #F3DCD4;
 		}
 
 	strong, b {
@@ -309,6 +310,20 @@ mark {
 			border-radius: 4px;
 			display: block;
 		}
+
+		.image.avatar {
+			width: 1.75rem;
+			height: 1.75rem;
+			align-items: center;
+			vertical-align: middle;
+		}
+
+			.image.avatar img {
+				width: 1.75rem;
+				height: 1.75rem;
+				align-items: center;
+				vertical-align: middle;
+			}
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -491,7 +506,7 @@ mark {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(rgba(84, 92, 140, 0.6), 30%, rgba(243, 220, 212, 0.6), 70%, rgba(84, 92, 140, 0.6)), url("../../images/overlay.png");
+			background-image: linear-gradient(rgba(84, 92, 140, 0.4), 20%, rgba(243, 220, 212, 0.6), 80%, rgba(84, 92, 140, 0.4)), url("../../images/overlay.png");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -551,6 +566,7 @@ mark {
 		min-height: 100vh;
 		width: 100%;
 		padding: 4rem 2rem;
+		margin: auto;
 		z-index: 3;
 	}
 
@@ -604,6 +620,7 @@ mark {
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		max-width: 100%;
 		text-align: center;
+		margin: auto;
 	}
 
 		#header > * {
@@ -641,10 +658,12 @@ mark {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 2rem 2rem;
 				max-height: 40rem;
+				max-width: 40rem;
 				overflow: hidden;
-				background-color: rgba(74, 64, 99, 0.8);
+				box-shadow: 0 0 2px #ffffff;
+				background-image: linear-gradient(to bottom, rgba(84, 92, 140, 0.6), rgba(84, 92, 140, 0.9)), url("../../images/overlay.png");
 			}
 
 				#header .content .inner > :last-child {
@@ -652,9 +671,9 @@ mark {
 				}
 
 			#header .content p {
-				letter-spacing: 0.2rem;
+				letter-spacing: 0.1rem;
 				font-size: 1rem;
-				line-height: 1;
+				line-height: 1.5;
 			}
 
 		#header nav ul {
@@ -665,43 +684,77 @@ mark {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
+			border: solid 0px #ffffff;
 			border-radius: 4px;
-			background-color: rgba(74, 64, 99, 0.5);
+			box-shadow: 0 0 2px #ffffff;
 			min-height: 0;
 			display: inline-block;
+			padding-bottom: 0.25rem;
+			background: linear-gradient(to bottom, rgba(74, 64, 99, 0.5), rgba(74, 64, 99, 0.8));
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-top: dotted 1px #ffffff;
+				border-bottom: dotted 1px #ffffff;
 			}
-
-				#header nav ul li:first-child {
-					border-top: 0;
-				}
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
+					min-width: 10rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
+					color: #FFFFFF;
 					border-bottom: 0;
+					text-shadow: 0 0 1px #222222;
 				}
 
 					#header nav ul li a:hover {
 						background-color: rgba(34, 34, 34, 0.5);
+						color: #FFFFFF;
+						border-radius: 3px;
 						box-shadow: inset 0 0 6px #222222;
 					}
 
 					#header nav ul li a:active {
 						background-color: rgba(34, 34, 34, 0.7);
+						color: #FFFFFF;
 						box-shadow: inset 0 0 10px #222222;
 					}
+		
+			#header nav ul a {
+				display: inline-block;
+				text-align: center;
+				letter-spacing: 0.2rem;
+				color: rgba(243, 220, 212, 0.3);
+				border-bottom: none;
+			}
+
+				#header nav ul a:hover {
+					color: #F3DCD4;
+					text-shadow: 0 0 1px #222222;
+				}
+
+				#header nav ul a:active {
+					color: #F3DCD4;
+					text-shadow: 0 0 1px #222222;
+				}
+
+			#header nav ul p {
+				font-size: 0.4rem;
+				opacity: 0.75;
+				margin-bottom: 0;
+				text-transform: uppercase;
+				letter-spacing: 0.05rem;
+				color: rgba(243, 220, 212, 0.3);
+			}
+
+				#header nav ul p a{
+					letter-spacing: 0.05rem;
+				}
 
 		body.is-article-visible #header {
 			-moz-transform: scale(0.95);
@@ -753,7 +806,7 @@ mark {
 				}
 
 			#header .content .inner {
-				padding: 2.5rem 1rem;
+				padding: 2rem 1rem;
 			}
 
 			#header .content p {
@@ -805,13 +858,19 @@ mark {
 
 		@media only screen and (orientation: portrait){
 			#header{
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
-				margin-top: 1rem;
-				margin-bottom: 1rem;
+				-moz-flex-direction: column-reverse;
+				-webkit-flex-direction: column-reverse;
+				-ms-flex-direction: column-reverse;
+				flex-direction: column-reverse;
+				margin-top: 2rem;
+				margin-bottom: 2rem;
 			}
+
+				#header > * {
+					position: relative;
+					margin-top: 1rem;
+					margin-bottom: 1rem;
+				}
 		}
 
 /* Main */
@@ -861,11 +920,23 @@ mark {
 			max-width: 100%;
 			height: 30rem;
 			max-height: 100%;
-			background-color: rgba(74, 64, 99, 0.7);
+			background-image: linear-gradient(to bottom, rgba(84, 92, 140, 0.8), rgba(74, 64, 99, 0.8)), url("../../images/overlay.png");
 			border-radius: 4px;
 			opacity: 0;
 			overflow-y: scroll;
 		}
+
+			#main article ol {
+				display: inline;
+				list-style: none;
+				text-align: right;
+				padding-right: 0;
+			}
+
+				#main article ol li {
+					display: inline;
+					align-items: right;
+				}
 
 			#main article.active {
 				-moz-transform: translateY(0);
@@ -939,41 +1010,4 @@ mark {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
 			}
 
-		}
-
-/* Footer */
-
-	#footer {
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		width: 100%;
-		max-width: 100%;
-		margin-top: 2rem;
-		text-align: center;
-	}
-
-		#footer .copyright {
-			letter-spacing: 0.2rem;
-			font-size: 0.6rem;
-			opacity: 0.75;
-			margin-bottom: 0;
-			text-transform: uppercase;
-		}
-
-		body.is-article-visible #footer {
-			-moz-transform: scale(0.95);
-			-webkit-transform: scale(0.95);
-			-ms-transform: scale(0.95);
-			transform: scale(0.95);
-			-moz-filter: blur(0.1rem);
-			-webkit-filter: blur(0.1rem);
-			-ms-filter: blur(0.1rem);
-			filter: blur(0.1rem);
-			opacity: 0;
-		}
-
-		body.is-preload #footer {
-			opacity: 0;
 		}
