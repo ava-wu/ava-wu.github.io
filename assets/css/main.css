@@ -134,6 +134,7 @@ mark {
 		a:hover {
 			border-bottom-color: transparent;
 			color: #F3DCD4;
+			text-shadow: 0 0 8px rgba(34, 34, 34, 0.5);
 		}
 
 	strong, b {
@@ -822,7 +823,7 @@ mark {
 			}
 
 				#header .content .inner {
-					padding: 2.5rem 0;
+					padding: 2.5rem 1rem;
 				}
 
 				#header nav ul {
@@ -980,12 +981,12 @@ mark {
 
 				#main article .close:hover:before {
 					background-color: rgba(34, 34, 34, 0.2);
-					box-shadow: inset 0 0 4px #222222;
+					box-shadow: inset 0 0 2px #222222;
 				}
 
 				#main article .close:active:before {
 					background-color: rgba(34, 34, 34, 0.3);
-					box-shadow: inset 0 0 6px #222222;
+					box-shadow: inset 0 0 4px #222222;
 				}
 
 		@media screen and (max-width: 736px) {
