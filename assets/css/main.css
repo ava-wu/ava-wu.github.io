@@ -714,7 +714,7 @@ input, select, textarea {
 							line-height: 0.9em;
 							font-size: 2.5em;
 							margin: 0.2em 0em 0em -0.05em;
-							opacity: 0.5;
+							opacity: 0.6;
 							outline: 0;
 							-moz-transition: opacity .25s ease-in-out;
 							-webkit-transition: opacity .25s ease-in-out;
@@ -751,6 +751,7 @@ input, select, textarea {
 
 							#main > .panel.intro header div a:hover {
 								opacity: 1.0;
+								font-weight: 500;
 							}
 
 							#main > .panel.intro header div a.active {
